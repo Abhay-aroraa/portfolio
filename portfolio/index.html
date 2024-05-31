@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=&gt;, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index_files/style.css">
+<style>
+    * {
+        padding: 10;
+        margin-top: 5px;
+
+    }
+
+    body {
+        background-color: rgba(0, 0, 33);
+        color: white;
+    }
+
+    .purple {
+        color: rgb(224, 95, 224);
+
+    }
+</style></head>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="left">ABHAY'S PORTFOLIO </div>
+            <div class="right">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/">Home</a></li>
+                    <li><a href="http://127.0.0.1:5500/">About</a></li>
+                    <li><a href="http://127.0.0.1:5500/">Services</a></li>
+                    <li><a href="http://127.0.0.1:5500/">Projects</a></li>
+                    <li><a href="http://127.0.0.1:5500/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="firstsection">
+
+            <div class="leftsection"> Heyy, My Name is <span class="purple"> Abhay </span>
+                <div>And Iam Passionate </div>
+                <span id="element">expert in js</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span>
+            
+                <div class="button">
+                <button class="btn">Download Resume</button>
+            <button class="btn">visit github</button>
+            </div>
+            </div>
+            <div class="rightsection">
+                <img src="./index_files/jpg.png">
+        </div></section>
+        
+        
+        <hr>
+        <section class="secondsection">
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="newdata" src="./index_files/image.png" alt="">
+                </div>
+                <div class="vertical-title">
+                    HTML Developer (2021-2024)
+                </div>
+                <div class="vertical-desc">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque corporis officiis velit eius
+                    officia praesentium quo, animi unde odit rerum veniam veritatis commodi sapiente perferendis
+                    excepturi temporibus! Earum, sint iste!
+
+                </div>
+
+
+            </div>
+            
+        </section>
+    </main>
+    
+    <script src="./index_files/typed.umd.js.download"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'graphic desginer', 'expert in js'],
+            typeSpeed: 50,
+        });
+    </script><style data-typed-js-cursor-css="true">
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+      </style>
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<footer>
+    <div class="flex">
+        <div class="footer-first">
+            Abhay's PORTFOLIO
+        </div>
+        <div class="footer-second"></div>
+    </div>
+</footer>
+</body></html>
